@@ -1,6 +1,7 @@
-//<![CDATA[
+ //<![CDATA[
 var disqus_shortname="disqus_sKvDD84H4K";
 var disqus_url = disqus_blogger_current_url;
+
 (function () {
     "use strict";
     var get_comment_block = function () {
@@ -19,11 +20,13 @@ var disqus_url = disqus_blogger_current_url;
         comment_block.style.display = 'block';
         var dsq = document.createElement('script');
         dsq.async = true;
-        dsq.src = 'http://dizshare-blogspot-com.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.body).appendChild(dsq);
     }
 })();
+
 !function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||(o=e.createElement(n),o.id=t,o.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
+
     var divs = ["disqus-box", "blogger-box", "facebook-box"];
     var visibleDivId = null;
     function toggleVisibility(divId) {
@@ -46,6 +49,7 @@ var disqus_url = disqus_blogger_current_url;
         }
       }
     }
+
 $(".commentbtn").click(function (e) {
 $(this).addClass("btncurrent").siblings().removeClass("btncurrent");
 });
