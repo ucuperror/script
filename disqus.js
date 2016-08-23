@@ -1,5 +1,5 @@
  //<![CDATA[
-var disqus_shortname="disqus_sKvDD84H4K";
+var disqus_shortname="dizshare-blogspot-com";
 var disqus_url = disqus_blogger_current_url;
 
 (function () {
